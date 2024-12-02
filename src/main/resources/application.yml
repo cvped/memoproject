@@ -15,6 +15,6 @@ spring:
     thymeleaf:
         cache: false
     application:
-        name: Memo
+        name: memo
 mybatis:
     mapper-locations: mappers/*Mapper.xml 
