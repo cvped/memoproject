@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cvped.memo.common.MD5HashingEncoder;
+import com.cvped.memo.domain.User.User;
 import com.cvped.memo.user.repository.UserRepository;
 
 @Service
@@ -37,5 +38,10 @@ public class UserService {
 		
 	}
 	
+	public User getUser(String loginId,String password) {
+		
+		return  userRepository.selectUser(loginId, password);
+		
+	}
 	
 }
