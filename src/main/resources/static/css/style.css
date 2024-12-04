@@ -4,7 +4,7 @@
 	margin:0 auto
 }
 
-.header{
+header{
 	height:100px;
 	background-color:#cccccc
 }
@@ -16,6 +16,6 @@
 	background-color:#cccccc
 }
 
-.footer{
+footer{
 	height:70px;
 }

@@ -3,7 +3,7 @@ package com.cvped.memo.user.repository;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.cvped.memo.domain.User.User;
+import com.cvped.memo.domain.User;
 
 
 @Mapper

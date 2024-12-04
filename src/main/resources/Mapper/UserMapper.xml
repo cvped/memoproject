@@ -25,7 +25,7 @@
  	</insert>
  
  	<select id="selectUser" parameterType="map"
- 	resultType="com.cvped.memo.user.domain.User">
+ 	resultType="com.cvped.memo.domain.User">
  			SELECT
  		(
  			`id`

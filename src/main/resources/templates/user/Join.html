@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko"
- xmlns:th="http://www.thymeleaf.org" 
- xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
- layout:decorate="~{Layout/default}">
+ 		xmlns:th="http://www.thymeleaf.org" 
+ 		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+ 		layout:decorate="~{Layout/default}">
+	
 	
 		<section layout:fragments="contents" class="contents d-flex justify-content-center">
 			<div class="input-box my-5 p-5 rounded-lg">
@@ -15,8 +16,8 @@
 				<button type="button" class="btn btn-secondary btn block mt-3" id="joinbtn">가입</button>
 				<a href="/user/join-view"></a>
 			</div>
-		
 		</section>
+		
 		<script layout:fragment="script">
 			$(document).ready(function(){
 				$("#joinbtn").on("click",function(){
