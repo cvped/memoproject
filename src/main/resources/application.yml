@@ -1,15 +1,21 @@
-#spring.application.name=Memo
+#spring.application.name=memo
 #
 #spring.thymeleaf.cache=false
 
 spring:
+    jpa:
+       hibernate:
+            ddl-auto: none
+            naming :
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl						
     config:
         import: security-variable.yml
     mvc:
         static-path-pattern: /static/**
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/memo
+        url: jdbc:mysql://localhost:3306/post
         username: root
         password: ${mysql.password}
     thymeleaf:
